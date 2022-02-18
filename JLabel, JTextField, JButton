@@ -1,0 +1,32 @@
+import javax.swing.*; 
+
+public class Main { 
+  JLabel u1;
+JTextField tf1;
+ JButton b1,b2; 
+Main(){ 
+JFrame f= new JFrame("Converter"); 
+  u1= new JLabel("Unit*");
+u1.setBounds(20,50,150,30);
+  String MassMeasurement[]={"kg to lbs" , "cm to m"}; 
+ JComboBox cb=new JComboBox(MassMeasurement); 
+cb.setBounds(50, 90,150,20); 
+
+ 
+ tf1=new JTextField(); 
+ tf1.setBounds(50,120,150,40); 
+ 
+ b1=new JButton("reset"); 
+b1.setBounds(45,200,75,50); 
+ b2=new JButton("convert"); 
+ b2.setBounds(145,200,95,50); 
+  f.add(u1); f.add(cb);
+f.add(tf1);f.add(b1);f.add(b2);  
+  f.setSize(350,350); 
+ f.setLayout(null); 
+f.setVisible(true); 
+}
+  public static void main(String[] args) { 
+new Main(); 
+}
+}
